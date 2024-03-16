@@ -6,14 +6,41 @@
 body{
     position: relative;
 }
-.menu{
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
+
+.menu-container {
+  color: #fff;
+  background-color: #bdf5e2;  
+  margin: 3px;
+  padding: 20px 0;
+  position: fixed;
+  justify-content: center;
+  top: 2rem;
+  left: 2rem;
+  width: 100%;
+  height: 120px;
+}                                            /* allargare a tutta pagina. cambiare background color tenerlo "trasparente" 
+                                              cambiare colore font. correggere link instagram */
+
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
 }
+
+.menu-container {
+  /* ... */
+  display: flex;
+  justify-content: center;    
+  width: 100%;
+  height: 120px;              /* Add this */ 
+}
+
+
 .menu > ul {
     list-style-type: none;
 }
+
 .menu > ul > li {
     line-height: 35px;
     background-color: #fff;
@@ -23,10 +50,26 @@ body{
     min-width: 125px;
     text-align: center;
     transition: all .1s ease-in;
+    position: relative;
 }
+
 .menu > ul > li:hover {
     background-color: #e1e1e1;
 }
+
+.hello-section{
+  padding-left: 100px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/images/bg.png');          /* decidere se tenere, scartare o cambiare */
+  background-position: center bottom;
+  padding-top: 2rem
+  /* font-size: 5px;                                    capire come ingrandire font, sistemare testo fa cagare */
+} 
+
 .first-section{
     min-height: 50vh;
     display: flex;
@@ -43,10 +86,10 @@ body{
     justify-content: center;
     gap: 4rem;
     padding: 4rem 0;
-}
+}                                                       /* da rivedere */
 
-iframe{
-}
+/* iframe{
+} */
 
 div{
     max-width: 700px;
@@ -69,6 +112,9 @@ i:hover{
     color: #2c3136;
 }
 
+.instagram{
+  color: #e23737;
+}
 .skills-section{
     display: flex;
     flex-direction: column;
@@ -114,6 +160,9 @@ i:hover{
 .skill-card {
     padding: 3rem 0;
 }
+
+
+
 
 /* font */
 .roboto-thin {
