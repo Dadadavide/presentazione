@@ -34,8 +34,33 @@ body{
   height: 100%;
   font-size: 48px;
 }
+.title-mobile{
+  display: none;
+  text-align: center;
+}
+
 h1 {
   font-size: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 25px;
+  }
+  .title {
+    display: none;
+  }
+  .title-mobile{
+    display: flex;
+    justify-content: center;
+  }
+  .social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 h2 {
@@ -87,12 +112,11 @@ h2 {
   background-color: #e1e1e1;
 }
 
-
 nav{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,13 +151,25 @@ nav{
     padding-top: 3rem;
 }
 
-.social-section{
+.social-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    padding: 4rem 0;
-}                                                       /* da rivedere */
+    gap: 2rem;
+    
+}   
+
+.title-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.icone-social {
+  font-size: 25px;
+}
+
 
 /* iframe{
 } */
@@ -171,12 +207,25 @@ i:hover{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 700px;
+    max-width: 700px;
+}
+
+.icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 700px;
 }
 
 .skill-header > img {
     height: 135px;
     width: auto;
+}
+
+.skill-header1 {
+  display: flex;
+  height: 20px;
 }
 
 .skill-header > div {
@@ -271,6 +320,13 @@ i:hover{
   width: 100%;
   background-image: url(/assets/img/images/tecniche.webp);
   background-size: cover;
+}
+
+iframe{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 /* font */

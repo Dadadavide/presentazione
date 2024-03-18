@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+.container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 input{
     border: 2px solid #484848;
     flex: 1;
@@ -20,6 +26,7 @@ form{
     align-items: center;
     gap: 1rem;
     width: 100%;
+    max-width: 700px;
     background-color: #f9f9f9;
     padding: 2rem 3rem;
     border-radius: 1.5rem;
@@ -55,6 +62,12 @@ button{
 button:hover{
     -webkit-box-shadow: inset 1px 4px 17px -4px #000000; 
     box-shadow: inset 1px 4px 17px -4px #00000075;
+}
+
+@media screen and (max-width: 992px) {
+  .input_2{
+    flex-direction: column;
+  }
 }
 
 /* font */

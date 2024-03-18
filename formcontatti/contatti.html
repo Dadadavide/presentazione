@@ -15,25 +15,27 @@
         rel="stylesheet">
 </head>
 <body>
-    <form action="https://api.web3forms.com/submit" method="POST">
-    
-        <!-- Replace with your Access Key -->
-        <input type="hidden" name="access_key" value="343c74a5-d34e-4f3f-b3bf-05593d53a7d3">
-    
-        <!-- Form Inputs. Each input must have a name="" attribute -->
-        <div class="input_2">
-            <input type="text" name="name" required placeholder="nome">
-            <input type="email" name="email" required placeholder="email">
-        </div>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+        
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="343c74a5-d34e-4f3f-b3bf-05593d53a7d3">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <div class="input_2">
+                <input type="text" name="name" required placeholder="nome">
+                <input type="email" name="email" required placeholder="email">
+            </div>
 
-        <textarea name="message" required placeholder="inserisci la tua richiesta"></textarea>
-    
-        <!-- hCaptcha Spam Protection -->
-        <div class="h-captcha" data-captcha="true"></div>
-    
-        <button type="submit" class="roboto-bold">INVIA RICHIESTA</button>
-    
-    </form>
+            <textarea name="message" required placeholder="inserisci la tua richiesta"></textarea>
+        
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" data-captcha="true"></div>
+        
+            <button type="submit" class="roboto-bold">INVIA RICHIESTA</button>
+        
+        </form>
+    </div>
     <script>
         const form = document.getElementById('form');
         const result = document.getElementById('result');
