@@ -43,6 +43,10 @@ h1 {
   font-size: 60px;
 }
 
+.text-scroll {
+  color: #fff;
+}
+
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 25px;
@@ -121,6 +125,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 175px;
+  transition: all .15s ease-in-out;
 }
 
 .navbar-spacer{
@@ -149,6 +154,7 @@ nav{
     background: url('../img/images/bg.png');
     background-position: center bottom;
     padding-top: 3rem;
+    padding-bottom: 15rem;
 }
 
 .social-section {
@@ -170,6 +176,21 @@ nav{
   font-size: 25px;
 }
 
+.bg-beige{
+  background-color: #f8c584;
+}
+
+footer {
+  background-color: #0a66c2;
+  color: #e1e1e1;
+  height: 20rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* iframe{
 } */

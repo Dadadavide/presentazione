@@ -1,12 +1,21 @@
-var saluto = "Ciao";
-var nome = "Gesù";
+function sum( a, b ){
+    return ( a + b )
+}
 
-console.log(saluto,nome)
+let navbarTitle = document.querySelector('h1')
+let navbar = document.querySelector('nav')
 
-var button = document.querySelector("#btn_1")
+function handleScroll() {
+    let scrollDistance = window.scrollY
+    if(scrollDistance > 120){
+        console.log('DISTANCE: ', window.scrollY)
+        navbar.classList.add('bg-beige')
+        navbarTitle.classList.add('text-scroll')
+    } else if (scrollDistance <= 120){
+        navbar.classList.remove('bg-beige')
+        navbarTitle.classList.remove('text-scroll')
+    }
+}
 
-console.log(button)
+window.addEventListener('scroll', handleScroll)
 
-var button = document.querySelector("#btn_2")
-
-console.log(button)
