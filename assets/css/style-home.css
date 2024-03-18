@@ -2,59 +2,93 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration:none;
+
 }
 body{
-    position: relative;
+  position: relative;
 }
 
 .menu-container {
-  color: #fff;
-  background-color: #bdf5e2;  
-  margin: 3px;
-  padding: 20px 0;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  top: 2rem;
-  left: 2rem;
-  width: 100%;
-  height: 120px;
-}                                            /* allargare a tutta pagina. cambiare background color tenerlo "trasparente" 
-                                              cambiare colore font. correggere link instagram */
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  padding-left: 150px;
+}                                          
 
-.menu {
-  border: 1px solid #fff;
-  width: 900px;
+.title {
+  flex: 1;
+  text-align: center;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 48px;
+}
+h1 {
+  font-size: 60px;
 }
 
-.menu-container {
-  /* ... */
-  display: flex;
-  justify-content: center;    
-  width: 100%;
-  height: 120px;              /* Add this */ 
+h2 {
+  font-size: 20px;
 }
+.menu{
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  font-size: 24px;
 
+}
 
 .menu > ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.menu > ul > li {
-    line-height: 35px;
-    background-color: #fff;
-    cursor: pointer;
-    padding: 0 1rem;
-    margin-bottom: .25rem;
-    min-width: 125px;
-    text-align: center;
-    transition: all .1s ease-in;
-    position: relative;
+.menu > li {
+  line-height: 35px;
+  cursor: pointer;
+  padding: 0 1rem;
+  margin-bottom: .25rem;
+  min-width: 125px;
+  text-align: center;
+  transition: all .1s ease-in;
+  position: relative;
+  color: #080808;
+}
+
+.menu-img-container {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+}
+
+.menu > li > a {
+  color: #010101;
 }
 
 .menu > ul > li:hover {
-    background-color: #e1e1e1;
+  background-color: #e1e1e1;
+}
+
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 175px;
+}
+
+.navbar-spacer{
+  height: 175px;
 }
 
 .hello-section{
@@ -80,6 +114,7 @@ body{
     background-position: center bottom;
     padding-top: 3rem;
 }
+
 .social-section{
     display: flex;
     align-items: center;
@@ -90,10 +125,6 @@ body{
 
 /* iframe{
 } */
-
-div{
-    max-width: 700px;
-}
 
 i{
     font-size: 5rem;
@@ -161,8 +192,74 @@ i:hover{
     padding: 3rem 0;
 }
 
+#vision {
+  width: 100%;
+}
 
+.vision {
+  text-align: center;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 50vw;
+  width: 100%;
+  background-image: url(/assets/img/images/vision.webp); 
+  background-size: cover;
+}
 
+#progettazione {
+  width: 100%;
+}
+
+.progettazione{
+  text-align: center;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 50vw;
+  width: 100%;
+  background-image: url(/assets/img/images/progettazione.webp);
+  background-size: cover;
+}
+
+#ambienti {
+  width: 100%;
+}
+
+.ambienti{
+  text-align: center;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 50vw;
+  width: 100%;
+  background-image: url(/assets/img/images/ambienti.webp);
+  background-size: cover;
+  background-position: center center;
+}
+
+#tecniche {
+  width: 100%;
+}
+
+.tecniche {
+  text-align: center;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 50vw;
+  width: 100%;
+  background-image: url(/assets/img/images/tecniche.webp);
+  background-size: cover;
+}
 
 /* font */
 .roboto-thin {
