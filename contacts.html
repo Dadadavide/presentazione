@@ -1,15 +1,117 @@
+<!-- Required for hCaptcha -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style-home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <h1>Contatti</h1>
-    <button type="button" id="btn_2">
-       CLICK
-    </button>
-    <script src="/assets/js/index.js"></script>
+    <body>
+
+        <nav>
+            <div class = "menu-container">
+                <ul class="roboto-bold menu">
+                    <li>
+                        <a href="portfolio/D/index.html"><i class="fa-solid fa-d"></i>D</a>
+                    </li>
+                    <li>
+                        <a href="/portfolio"><i class="fa-regular fa-folder-open"></i>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/index.html"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="title roboto-bold">
+                <h1> Form Contatti </h1>
+            </div>
+            <div class = "menu-img-container">
+                <a href="https://www.linkedin.com/in/davide-andreacchio-37bb18109/"> 
+                    <i class="fa-brands fa-linkedin linkedin"></i>
+                </a> 
+                <a href="https://github.com/Dadadavide"> 
+                    <i class="fa-brands fa-github github"></i>
+                </a> 
+            </div>
+        </nav>
+
+        <div class="navbar-spacer"></div>
+
+        <div class="title-mobile roboto-bold">
+            <h1> FULL STACK DEVELOPMENT </h1>
+        </div>
+
+        <section class="skills-section">
+
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+        
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="343c74a5-d34e-4f3f-b3bf-05593d53a7d3">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <div class="input_2">
+                <input type="text" name="name" required placeholder="nome">
+                <input type="email" name="email" required placeholder="email">
+            </div>
+
+            <textarea name="message" required placeholder="inserisci la tua richiesta"></textarea>
+        
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" data-captcha="true"></div>
+        
+            <button type="submit" class="roboto-bold">INVIA RICHIESTA</button>
+        
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            result.innerHTML = "Please wait..."
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = "Form submitted successfully";
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+    </script>
 </body>
 </html>
