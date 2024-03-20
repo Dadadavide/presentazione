@@ -40,7 +40,7 @@ body{
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .text-scroll {
@@ -379,8 +379,6 @@ i:hover{
   
 }
 
-
-
 iframe{
   width: 100%;
   height: 500px;
@@ -417,6 +415,7 @@ iframe{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
+  gap: 10px;
 }
 
 .roboto-black {
