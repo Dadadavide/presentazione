@@ -96,8 +96,69 @@ h2 {
 }
 
 .menu-img-container > a > i {
-  font-size: 50px;
+  font-size: 100px;
 }
+
+footer {
+  background-color: #0a66c2;
+  color: #e1e1e1;
+  height: 20rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello-section{
+  padding-left: 100px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/images/bg.png');          /* decidere se tenere, scartare o cambiare */
+  background-position: center bottom;
+  padding-top: 2rem
+  /* font-size: 5px;                                    capire come ingrandire font, sistemare testo fa cagare */
+} 
+
+.first-section{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/images/bg.png');
+    background-position: center bottom;
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+}
+
+.social-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  
+}   
+
+.title-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.icone-social {
+font-size: 25px;
+}
+
+.bg-beige{
+background-color: #f8c584;
+}
+
 .menu > li > a {
   color: #010101;
   font-size: 15px;
