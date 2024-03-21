@@ -37,6 +37,7 @@ body{
 .title-mobile{
   display: none;
   text-align: center;
+  font-size: 20px;
 }
 
 h1 {

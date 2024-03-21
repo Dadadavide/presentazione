@@ -313,6 +313,14 @@ i:hover{
 color: #e23737;
 }
 
+iframe{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+
 @media screen and (max-width: 992px) {
   .input_2{
     flex-direction: column;
