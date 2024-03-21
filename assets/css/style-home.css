@@ -318,6 +318,7 @@ i:hover{
 
 .skill-card {
     padding: 3rem 0;
+    max-width: 700px;
 }
 
 #vision {
