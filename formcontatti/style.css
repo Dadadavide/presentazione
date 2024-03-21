@@ -319,6 +319,45 @@ color: #e23737;
   }
 }
 
+@media screen and (max-width: 492px) {
+  h1 {
+    font-size: 18px;
+  }
+  .title {
+    display: none;
+  }
+  .title-mobile{
+    display: flex;
+    justify-content: center;
+  }
+  .social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 18px;
+  }
+  .title {
+    display: none;
+  }
+  .title-mobile{
+    display: flex;
+    justify-content: center;
+  }
+  .social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 /* font */
 .roboto-thin {
   font-family: "Roboto", sans-serif;
