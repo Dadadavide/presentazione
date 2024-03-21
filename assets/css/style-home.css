@@ -421,6 +421,15 @@ i:hover{
   max-width: 700px;
 }
 
+.contenitore-c-d-m-q-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 700px;
+  height: 400px;
+}
+
 .ci-devo-mettere-qualcosa {
   position: center;
   text-align: center;
@@ -438,6 +447,15 @@ i:hover{
 .ci-devo-mettere-qualcosa-1 > p {
   font-size: 50px;
   
+}
+
+.ci-devo-mettere-qualcosa-2 {
+  position: center;
+  text-align: center;
+}
+
+.ci-devo-mettere-qualcosa-2 > p {
+  font-size: 50px;
 }
 
 iframe{
