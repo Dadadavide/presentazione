@@ -161,7 +161,7 @@ footer {
   background: url('../img/images/bg.png');          /* decidere se tenere, scartare o cambiare */
   background-position: center bottom;
   padding-top: 2rem
-  /* font-size: 5px;                                    capire come ingrandire font, sistemare testo fa cagare */
+  /* font-size: 5px;                                    capire come ingrandire font, sistemare testo fa cagare*/
 } 
 
 .first-section{
@@ -174,7 +174,7 @@ footer {
     background-position: center bottom;
     padding-top: 3rem;
     padding-bottom: 15rem;
-}
+} 
 
 .social-section {
   display: flex;
@@ -289,6 +289,30 @@ button:hover{
     box-shadow: inset 1px 4px 17px -4px #00000075;
 }
 
+/* iframe{
+} */
+
+i{
+  font-size: 5rem;
+  transition: all .1s ease-in;
+}
+
+i:hover{
+  transform: scale(1.05);
+}
+
+.linkedin{
+  color: #0a66c2;
+}
+
+.github{
+  color: #2c3136;
+}
+
+.instagram{
+color: #e23737;
+}
+
 @media screen and (max-width: 992px) {
   .input_2{
     flex-direction: column;
@@ -366,4 +390,5 @@ button:hover{
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: italic;
-}
+} */ */ */
+
