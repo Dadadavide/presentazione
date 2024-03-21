@@ -16,10 +16,9 @@ body{
   align-items: center;
   height: 100%;
   width: 20%;
-  padding-left: 80px;
+  padding-left: 100px;
   gap: 1rem;
-}                
-
+}    
 .menu-container > ul > li > a > i {
   font-size: 15px;
 }
