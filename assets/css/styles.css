@@ -131,6 +131,9 @@ html, body, * {
     display: flex;
     align-items: center;
   }
+  .contenuto > img {
+    max-width: 500px;
+  }
   
   .logo,
   .subscribe {
