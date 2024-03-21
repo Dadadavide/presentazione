@@ -28,6 +28,7 @@ form{
 
 .input_2{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
 }
