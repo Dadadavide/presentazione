@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration:none;
+}
+
+body{
+  position: relative;
 }
 
 .menu-container {
@@ -14,7 +19,6 @@
   padding-left: 80px;
   gap: 1rem;
 }                
-
 
 .menu-container > ul > li > a > i {
   font-size: 15px;
@@ -33,10 +37,11 @@
 .title-mobile{
   display: none;
   text-align: center;
+  font-size: 40px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .text-scroll {
@@ -151,6 +156,34 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.menu > li > a {
+  color: #010101;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu > ul > li:hover {
+  background-color: #e1e1e1;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 175px;
+  transition: all .15s ease-in-out;
+}
+
+.navbar-spacer{
+  height: 175px;
+}
 
 .hello-section{
   padding-left: 100px;
@@ -198,35 +231,6 @@ font-size: 25px;
 
 .bg-beige{
 background-color: #f8c584;
-}
-
-.menu > li > a {
-  color: #010101;
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu > ul > li:hover {
-  background-color: #e1e1e1;
-}
-
-nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 175px;
-  transition: all .15s ease-in-out;
-}
-
-.navbar-spacer{
-  height: 175px;
 }
 
 
@@ -322,53 +326,8 @@ iframe{
   justify-content: center;
 }
 
-
-@media screen and (max-width: 992px) {
-  .input_2{
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 492px) {
-  h1 {
-    font-size: 18px;
-  }
-  .title {
-    display: none;
-  }
-  .title-mobile{
-    display: flex;
-    justify-content: center;
-  }
-  .social-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 18px;
-  }
-  .title {
-    display: none;
-  }
-  .title-mobile{
-    display: flex;
-    justify-content: center;
-  }
-  .social-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
 /* font */
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -439,5 +398,4 @@ iframe{
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: italic;
-} */ */ */
-
+} 
