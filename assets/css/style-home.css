@@ -319,13 +319,15 @@ i:hover{
     max-width: 700px;
 }
 
-#vision {
+#class {
   width: 100%;
 }
 
+ 
 .vision {
   text-align: center;
   font-size: 60px;
+  color: #fff;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -336,13 +338,11 @@ i:hover{
   background-size: cover;
 }
 
-#progettazione {
-  width: 100%;
-}
 
 .progettazione{
   text-align: center;
   font-size: 60px;
+  color: #fff
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -353,13 +353,10 @@ i:hover{
   background-size: cover;
 }
 
-#ambienti {
-  width: 100%;
-}
-
 .ambienti{
   text-align: center;
   font-size: 60px;
+  color: #fff
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -371,9 +368,6 @@ i:hover{
   background-position: center center;
 }
 
-#tecniche {
-  width: 100%;
-}
 
 .tecniche {
   text-align: center;
