@@ -9,6 +9,14 @@ body{
   position: relative;
 }
 
+: root {
+  --primary-color: black;
+}
+
+p {
+  var(--primary-color);
+}
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -319,11 +327,10 @@ i:hover{
     max-width: 700px;
 }
 
-#class {
+#vision {
   width: 100%;
 }
 
- 
 .vision {
   text-align: center;
   font-size: 60px;
@@ -338,6 +345,9 @@ i:hover{
   background-size: cover;
 }
 
+#progettazione {
+  width: 100%;
+}
 
 .progettazione{
   text-align: center;
@@ -351,6 +361,10 @@ i:hover{
   width: 100%;
   background-image: url(/assets/img/images/progettazione.webp);
   background-size: cover;
+}
+
+#ambienti {
+  width: 100%;
 }
 
 .ambienti{
@@ -368,6 +382,10 @@ i:hover{
   background-position: center center;
 }
 
+#tecniche {
+  width: 100%;
+  
+}
 
 .tecniche {
   text-align: center;
