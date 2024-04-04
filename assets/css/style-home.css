@@ -1,3 +1,11 @@
+:root {                                
+  --primary-color: black;
+}
+
+p { 
+  var:(--primary-color);
+}         
+
 *,html,body{
     box-sizing: border-box;
     margin: 0;
@@ -7,14 +15,6 @@
 }
 body{
   position: relative;
-}
-
-: root {
-  --primary-color: black;
-}
-
-p {
-  var(--primary-color);
 }
 
 .menu-container {
@@ -56,6 +56,7 @@ h1 {
 .text-scroll {
   color: #fff;
 }
+
 
 @media screen and (max-width: 992px) {
   h1 {
@@ -352,7 +353,6 @@ i:hover{
 .progettazione{
   text-align: center;
   font-size: 60px;
-  color: #fff
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -370,7 +370,6 @@ i:hover{
 .ambienti{
   text-align: center;
   font-size: 60px;
-  color: #fff
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -379,8 +378,8 @@ i:hover{
   width: 100%;
   background-image: url(/assets/img/images/ambienti.webp);
   background-size: cover;
-  background-position: center center;
 }
+
 
 #tecniche {
   width: 100%;
